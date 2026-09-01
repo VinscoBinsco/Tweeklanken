@@ -92,22 +92,7 @@ body {
 		</style>
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
 <link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
-<script>
-  const allowedDomain = "schoolheld.nl";
-  
-  if (window.self !== window.top) {
-    try {
-      const parentHost = window.top.location.hostname;
-      if (!parentHost.endsWith(allowedDomain)) {
-        document.body.innerHTML = "<h1>Toegang geweigerd: Deze game mag alleen op schoolheld.nl gespeeld worden.</h1>";
-      }
-    } catch (e) {
-      document.body.innerHTML = "<h1>Toegang geweigerd: Externe embedding niet toegestaan.</h1>";
-    }
-  } else {
-    window.location.href = "https://schoolheld.nl";
-  }
-</script>
+
 	</head>
 	<body>
 		<canvas id="canvas">
@@ -126,7 +111,7 @@ body {
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":41425064,"index.wasm":35739700},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":41425240,"index.wasm":35739700},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
